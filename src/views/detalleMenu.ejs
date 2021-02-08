@@ -1,0 +1,43 @@
+<%- include("./partials/head") %>
+  <body>
+
+    <%- include("./partials/header") %>
+
+    <!-- Page content -->
+    <div class="ps-content">
+
+      <!-- Menu Section -->
+      <div class="ps-row ps-padding-64" id="menu">
+        <div class="ps-col l6 ps-padding-large">
+          
+          <!-- Nombre plato -->
+          <h1 class="ps-center"> <%= platos[0] %> </h1>
+          
+          <br />
+          
+          <!-- Descripción plato -->
+          <h4> <% if (platos[1] != null){ %>
+            <%= platos[1] %> 
+            <% } else{ %>
+            Plato típico 
+          <% } %> </h4>
+ 
+          <!-- Precio plato -->
+          <p class="ps-text-grey">
+            U$S <%= platos[2] %>
+          </p>
+        </div>
+
+        <div class="ps-col l6 ps-padding-large ps-img-menu">
+          <img
+            src="/images/<%= platos[3] %>"
+            class="ps-round ps-image ps-opacity-min"
+            alt="Menu"
+          />
+        </div>
+      </div>
+
+      <%- include("./partials/footer") %>
+    </div>
+  </body>
+</html>
