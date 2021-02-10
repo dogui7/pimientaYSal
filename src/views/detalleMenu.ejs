@@ -11,26 +11,26 @@
         <div class="ps-col l6 ps-padding-large">
           
           <!-- Nombre plato -->
-          <h1 class="ps-center"> <%= platos[0] %> </h1>
+          <h1 class="ps-center"> <%= plato.nombre %> </h1>
           
           <br />
           
           <!-- Descripción plato -->
-          <h4> <% if (platos[1] != null){ %>
-            <%= platos[1] %> 
+          <h4> <% if (plato[1] != null){ %>
+            <%= plato.descripcion %> 
             <% } else{ %>
             Plato típico 
           <% } %> </h4>
  
           <!-- Precio plato -->
           <p class="ps-text-grey">
-            U$S <%= platos[2] %>
+            U$S <%= plato.precio %>
           </p>
         </div>
 
         <div class="ps-col l6 ps-padding-large ps-img-menu">
           <img
-            src="/images/<%= platos[3] %>"
+            src="/images/<%= plato.rutaImagen %>"
             class="ps-round ps-image ps-opacity-min"
             alt="Menu"
           />

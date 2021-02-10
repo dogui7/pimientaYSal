@@ -1,16 +1,30 @@
-let arrayFinal = [];
+let platos = [
 
-let plato1 = ['Plato vacío', , "Mucho", 'Plato-vacio.jpg'];
-let plato2 = ['Carpaccio fresco', 'Entrada Carpaccio de salmón con cítricos', 65.50, 'Carpaccio-de-salmon.jpg'];
-let plato3 = ['Risotto de berenjena', 'Risotto de berenjena y queso de cabras', 47.00, 'Risotto-berenjena-queso-cabra.jpg'];
-let plato4 = ['Mousse de arroz', 'Mousse de arroz con leche y aroma de azahar', 27.50, 'Mousse-de-arroz-con-leche.jpg'];
-let plato5 = ['Espárragos blancos', 'Espárragos blancos con vinagreta de verduras y jamón ibérico', 37.50, 'esparragos.png'];
+    {nombre:'Plato vacío',
+    descripcion: '',
+    precio: 0,
+    rutaImagen: 'Plato-vacio.jpg'},
 
-arrayFinal.push(plato1);
-arrayFinal.push(plato2);
-arrayFinal.push(plato3);
-arrayFinal.push(plato4);
-arrayFinal.push(plato5);
+    {nombre:'Carpaccio fresco',
+    descripcion: 'Entrada Carpaccio de salmón con cítricos',
+    precio: 65.50,
+    rutaImagen: 'Carpaccio-de-salmon.jpg'},
 
+    {nombre:'Risotto de berenjena',
+    descripcion: 'Risotto de berenjena y queso de cabras',
+    precio: 47.00,
+    rutaImagen: 'Risotto-berenjena-queso-cabra.jpg'},
+    
+    {nombre:'Mousse de arroz',
+    descripcion: 'Mousse de arroz con leche y aroma de azahar',
+    precio: 27.50,
+    rutaImagen: 'Mousse-de-arroz-con-leche.jpg'},
+    
+    {nombre:'Espárragos blancos',
+    descripcion: 'Espárragos blancos con vinagreta de verduras y jamón ibérico',
+    precio: 37.50,
+    rutaImagen: 'esparragos.png'},
 
-module.exports = arrayFinal;
+];
+
+module.exports = platos;

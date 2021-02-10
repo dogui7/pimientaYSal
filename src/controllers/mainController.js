@@ -1,5 +1,5 @@
 const path = require ('path');
-const baseDatos = require('./baseDatos');
+const platos = require('./baseDatos');
 
 module.exports ={
     
@@ -10,7 +10,7 @@ module.exports ={
 
     //Esta será la accion que ocurrirá al ir a /detalleMenu en el sitio web
     detalleMenu : (req, res) =>{
-        let platos = baseDatos[req.params.id];
-        return res.render(path.resolve(__dirname, '../views/detalleMenu.ejs'), {platos})
+        let plato = platos[req.params.id];
+        return res.render(path.resolve(__dirname, '../views/detalleMenu.ejs'), {plato})
     }
 }
